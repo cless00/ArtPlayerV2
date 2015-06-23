@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="com.google.ads.AdView">
+        <attr name="adSize">
+            <enum name="BANNER" value="1" />
+            <enum name="IAB_MRECT" value="2" />
+            <enum name="IAB_BANNER" value="3" />
+            <enum name="IAB_LEADERBOARD" value="4" />
+        </attr>
+        <attr format="string" name="adUnitId" />
+    </declare-styleable>
+    <declare-styleable name="com.cauly.android.ad.AdView">
+        <attr format="string" name="appcode" />
+        <attr format="string" name="adtype" />
+        <attr format="string" name="gender" />
+        <attr format="string" name="age" />
+        <attr format="integer" name="reloadInterval" />
+        <attr format="boolean" name="dynamicReloadInterval" />
+        <attr format="string" name="gps" />
+        <attr format="string" name="effect" />
+        <attr format="string" name="allowcall" />
+    </declare-styleable>
+
+</resources>

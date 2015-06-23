@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/set_pro" >
+
+        <Preference
+            android:key="ABOUT"
+            android:summary="@string/set_pro_about_smry"
+            android:title="@string/set_pro_about" >
+        </Preference>
+
+        <Preference
+            android:key="FEEDBACK"
+            android:summary="@string/set_pro_feedback_smry"
+            android:title="@string/set_pro_feedback" >
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/set_seek2" >
+
+        <EditTextPreference
+            android:defaultValue="5000"
+            android:dialogMessage="@string/set_seek2_gab_smry"
+            android:dialogTitle="@string/set_seek2_gab"
+            android:inputType="number"
+            android:key="GAB"
+            android:summary="@string/set_seek2_gab_smry"
+            android:title="@string/set_seek2_gab" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/set_seek" >
+
+        <EditTextPreference
+            android:defaultValue="4000"
+            android:dialogMessage="@string/set_seek_space_smry"
+            android:dialogTitle="@string/set_seek_space"
+            android:inputType="number"
+            android:key="SPACE"
+            android:summary="@string/set_seek_space_smry"
+            android:title="@string/set_seek_space" >
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:defaultValue="12"
+            android:dialogMessage="@string/set_seek_testcount_smry"
+            android:dialogTitle="@string/set_seek_testcount"
+            android:inputType="number"
+            android:key="TESTCOUNT"
+            android:summary="@string/set_seek_testcount_smry"
+            android:title="@string/set_seek_testcount" >
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:dialogMessage="@string/set_seek_condition_smry"
+            android:dialogTitle="@string/set_seek_condition"
+            android:inputType="number"
+            android:key="CONDITION"
+            android:summary="@string/set_seek_condition_smry"
+            android:title="@string/set_seek_condition" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

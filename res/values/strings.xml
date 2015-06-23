@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Art Player V2</string>
+    <string name="exit">Press back button to exit again.</string>
+    <string name="play_list">Play selected songs.</string>
+    <string name="titlebar">Now Playing</string>
+    <string name="random">Play songs randomly.</string>
+    <string name="inOrder">Play songs in order.</string>
+    <string name="looping_none">Play songs once.</string>
+    <string name="looping_one">Repeat this song.</string>
+    <string name="looping_all">Repeat all songs.</string>
+    <string name="play_ab_str">AB Repeat</string>
+    <string name="starting_ab">Setting AB</string>
+    <string name="presearch">Finding previous number.</string>
+    <string name="postsearch">Finding next number.</string>
+    <string name="set_pro">Application info</string>
+    <string name="set_pro_about">Application info</string>
+    <string name="set_pro_about_smry">어플리케이션 정보를 확인합니다.</string>
+    <string name="set_seek">AI seeking preferences</string>
+    <string name="set_seek_space">Minimum blank time</string>
+    <string name="set_seek_space_smry">자동 탐색시 공백의 최소 시간을 정합니다. 단위는 msec, 기본값은 4000(4초), 1-10000 사이의 값입니다.</string>
+    <string name="set_seek_testcount">Check count</string>
+    <string name="set_seek_testcount_smry">공백 인정 횟수를 정합니다. 기본값은 12, 1-1000 사이의 값입니다.</string>
+    <string name="set_seek_condition">Check value</string>
+    <string name="set_seek_condition_smry">공백 인정 조건값을 정합니다. 기본값은 5이며 1-128 사이의 값입니다.</string>
+    <string name="test_fail">Input proper value.</string>
+    <string name="option_setting">Preferences</string>
+    <string name="set_seek2">Common seeking preferences</string>
+    <string name="set_seek2_gab">Seeking interval</string>
+    <string name="set_seek2_gab_smry">탐색 이동 간격을 정합니다. 기본값은 5000(5초), 1-20000 사이의 값입니다.</string>
+    <string name="set_pro_feedback">Application feedback</string>
+    <string name="set_pro_feedback_smry">어플리케이션에 대한 버그나 개선사항을 전송합니다.</string>
+    <string name="set_pro_about_title">App title : Art Player AI Seeker</string>
+    <string name="set_pro_about_creator">Created by</string>
+    <string name="set_pro_about_creator1">Jeonghoon Scott Seo(CodeCreator) cless00@gmail.com</string>
+    <string name="set_pro_about_creator2">Eunbyul Noh byullove4@gmail.com </string>
+    <string name="set_pro_about_creator3">Hyunji Kim</string>
+    <string name="set_pro_about_version">Version : </string>
+    <string name="cancel_search">Cancel AI seeking.</string>
+    <string name="pre_dir">Previous Dir.</string>
+    <string name="playlist_delete">Delete from playlist</string>
+    <string name="playlist_delete_all">Delete all from playlist</string>
+
+</resources>

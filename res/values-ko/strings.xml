@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Art Player V2</string>
+    <string name="exit">종료 하시려면 한번 더 누르세요.</string>
+    <string name="play_list">선택한 파일을 재생합니다.</string>
+    <string name="titlebar">지금 재생 중</string>
+    <string name="random">랜덤으로 재생합니다.</string>
+    <string name="inOrder">순서대로 재생합니다.</string>
+    <string name="looping_none">전체 곡을 한번만 재생합니다.</string>
+    <string name="looping_one">한 곡만 반복 재생합니다.</string>
+    <string name="looping_all">전체 곡을 반복 재생합니다.</string>
+    <string name="play_ab_str">구간반복 재생 중</string>
+    <string name="starting_ab">구간 저장 중</string>
+    <string name="presearch">이전 문제를 찾는 중입니다.</string>
+    <string name="postsearch">다음 문제를 찾는 중입니다.</string>
+    <string name="set_pro">어플리케이션 정보</string>
+    <string name="set_pro_about">어플리케이션 정보</string>
+    <string name="set_pro_about_smry">어플리케이션 정보를 확인합니다.</string>
+    <string name="set_seek">자동탐색 설정</string>
+    <string name="set_seek_space">공백 인정 시간</string>
+    <string name="set_seek_space_smry">자동 탐색시 공백의 최소 시간을 정합니다. 단위는 msec, 기본값은 4000(4초), 1-10000 사이의 값입니다.</string>
+    <string name="set_seek_testcount">공백 인정 횟수</string>
+    <string name="set_seek_testcount_smry">공백 인정 횟수를 정합니다. 기본값은 12, 1-1000 사이의 값입니다.</string>
+    <string name="set_seek_condition">공백 인정 조건 값</string>
+    <string name="set_seek_condition_smry">공백 인정 조건값을 정합니다. 기본값은 5이며 1-128 사이의 값입니다.</string>
+    <string name="test_fail">알맞은 값을 입력해 주세요.</string>
+    <string name="option_setting">설정</string>
+    <string name="set_seek2">일반탐색 설정</string>
+    <string name="set_seek2_gab">탐색 이동 간격</string>
+    <string name="set_seek2_gab_smry">탐색 이동 간격을 정합니다. 기본값은 5000(5초), 1-20000 사이의 값입니다.</string>
+    <string name="set_pro_feedback">어플리케이션 피드백</string>
+    <string name="set_pro_feedback_smry">어플리케이션에 대한 버그나 개선사항을 전송합니다.</string>
+    <string name="set_pro_about_title">프로그램 명 : Art Player 자동 탐색 어학기</string>
+    <string name="set_pro_about_creator">만든이</string>
+    <string name="set_pro_about_creator1">서정훈(CodeCreator) cless00@gmail.com</string>
+    <string name="set_pro_about_creator2">노은별 byullove4@gmail.com </string>
+    <string name="set_pro_about_creator3">김현지</string>
+    <string name="set_pro_about_version">버전 : </string>
+    <string name="cancel_search">자동탐색이 취소 되었습니다.</string>
+    <string name="pre_dir">상위 디렉토리</string>
+    <string name="playlist_delete">재생목록에서 제거하기</string>
+    <string name="playlist_delete_all">모두 지우기</string>
+    
+</resources>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.cauly.android.ad.AdView
+        xmlns:app="http://schemas.android.com/apk/res/darack.com.player"
+        android:id="@+id/ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:adtype="cpc"
+        app:age="all"
+        app:allowcall="yes"
+        app:appcode="nI07pzjP"
+        app:dynamicReloadInterval="true"
+        app:effect="circle"
+        app:gender="all"
+        app:gps="off"
+        app:reloadInterval="30" />
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/looping"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/looping_none" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/random"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/random_off" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/titlebar"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/divider1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titlebar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/divider_horizontal_dim_dark" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar_layout"
+        android:layout_margin="10dp"
+        android:background="#20ff00ff" >
+
+        <ImageView
+            android:id="@+id/album_art"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/m_icon" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/divider2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album_art"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/divider_horizontal_dim_dark" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/divider2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:singleLine="true"
+            android:text="Thank you for using Art Player V2."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/divider3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/divider_horizontal_dim_dark" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/play_ab"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/album_art"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/atob_cancel" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/list_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/album_art"
+            android:src="@drawable/playlist" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/list_btn2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/album_art"
+            android:layout_toLeftOf="@+id/list_btn"
+            android:src="@drawable/filelist" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/atob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/album_art"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/play_ab"
+            android:text="--:-- ~ --:--"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:id="@+id/blank_list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_controll_layout"
+        android:layout_alignLeft="@+id/time_layout"
+        android:layout_alignRight="@+id/time_layout" >
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </SeekBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/time_layout" >
+
+        <darack.com.player.WaveformView
+            android:id="@+id/waveform"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbar_layout"
+        android:layout_alignLeft="@+id/btn_controll_layout"
+        android:layout_alignRight="@+id/btn_controll_layout" >
+
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="00:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00:00" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_controll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bg" >
+
+        <ImageView
+            android:id="@+id/a_ff_btn"
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/ff_btn"
+            android:padding="2dp"
+            android:src="@drawable/x_a_ff" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/play_btn"
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:padding="2dp"
+            android:src="@drawable/x_play" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/rew_btn"
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/play_btn"
+            android:padding="2dp"
+            android:src="@drawable/x_rew" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/a_rew_btn"
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/rew_btn"
+            android:padding="2dp"
+            android:src="@drawable/x_a_rew" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ff_btn"
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/play_btn"
+            android:padding="2dp"
+            android:src="@drawable/x_ff" >
+        </ImageView>
+    </RelativeLayout>
+
+    <!--
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a14eb80014ac969" >
+    </com.google.ads.AdView>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+    <ImageView
+    	android:id="@+id/row_album_art"
+    	android:layout_width="50px"
+    	android:layout_height="50px"
+ 		android:src="@drawable/git"
+    ></ImageView>
+    <TextView
+    	android:id="@+id/row_artist"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_toRightOf="@id/row_album_art"
+    	android:paddingLeft="5px"
+    	android:textSize="20px"
+    	android:text="111"
+    ></TextView>
+    <TextView
+   	 	android:id="@+id/row_title"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/row_album_art"
+    	android:layout_below="@id/row_artist"
+    	android:paddingLeft="5px"
+    	android:textSize="15px"
+    	android:text="222"
+    ></TextView>
+</RelativeLayout>
